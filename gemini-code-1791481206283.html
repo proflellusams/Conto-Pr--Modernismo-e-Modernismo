@@ -3,306 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividades: Conto – Pré-Modernismo e Modernismo</title>
-    <style>
-        :root {
-            --primary: #1e3a8a;
-            --secondary: #0d9488;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text: #1e293b;
-            --border: #cbd5e1;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 3px solid var(--primary);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
-        h1 { color: var(--primary); margin-bottom: 5px; }
-        h2 { color: var(--secondary); margin-top: 30px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-        
-        .student-info {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            background: #f1f5f9;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-
-        .input-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .input-group label {
-            font-weight: bold;
-            font-size: 0.9em;
-            margin-bottom: 5px;
-        }
-
-        .input-group input {
-            padding: 8px;
-            border: 1fr solid var(--border);
-            border-radius: 4px;
-        }
-
-        .activity-card {
-            background: #fff;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .options label {
-            display: block;
-            margin: 8px 0;
-            padding: 8px 12px;
-            background: #f8fafc;
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        .options label:hover {
-            background: #e2e8f0;
-        }
-
-        textarea {
-            width: 100%;
-            min-height: 90px;
-            padding: 10px;
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            font-family: inherit;
-            resize: vertical;
-            box-sizing: border-box;
-        }
-
-        /* Atividade de Ordenação */
-        .sortable-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sortable-item {
-            background: #e0f2fe;
-            border: 1px solid #7dd3fc;
-            padding: 10px 15px;
-            margin-bottom: 8px;
-            border-radius: 6px;
-            cursor: move;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .btn-group {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 30px;
-        }
-
-        button {
-            padding: 12px 24px;
-            font-size: 1rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .btn-submit { background-color: var(--primary); color: white; }
-        .btn-submit:hover { background-color: #1d4ed8; }
-
-        .btn-email { background-color: var(--secondary); color: white; }
-        .btn-email:hover { background-color: #0f766e; }
-
-        @media (max-width: 600px) {
-            .student-info { grid-template-columns: 1fr; }
-            .btn-group { flex-direction: column; }
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <h1>Língua Portuguesa - Ensino Médio</h1>
-        <p><strong>Sequência Didática:</strong> Conto – Pré-modernismo e Modernismo</p>[cite: 1]
-    </header>
-
-    <form id="quizForm">
-        <!-- Dados do Aluno -->
-        <div class="student-info">
-            <div class="input-group">
-                <label for="studentName">Nome Completo do Aluno:</label>
-                <input type="text" id="studentName" required placeholder="Digite seu nome...">
-            </div>
-            <div class="input-group">
-                <label for="studentEmail">Seu E-mail:</label>
-                <input type="email" id="studentEmail" required placeholder="seuemail@exemplo.com">
-            </div>
-        </div>
-
-        <!-- SEÇÃO 1: MÚLTIPLA ESCOLHA -->
-        <h2>1. Marque a Opção Correta (Múltipla Escolha)</h2>
-
-        <div class="activity-card">
-            <p><strong>Questão 1.</strong> No conto <em>"O homem que sabia javanês"</em> de Lima Barreto, a leitura do trecho inicial permite entender que o tema principal é uma:[cite: 8]</p>
-            <div class="options">
-                <label><input type="radio" name="q1" value="A"> A) Sátira social, pois trata do respeito e poder conferidos a quem fala bonito ou difícil.[cite: 8]</label>
-                <label><input type="radio" name="q1" value="B"> B) Crítica às pessoas que falam javanês e que trabalham no consulado.[cite: 8]</label>
-                <label><input type="radio" name="q1" value="C"> C) Ironia bem-humorada sobre um professor que ensina perfeitamente a língua.[cite: 8]</label>
-                <label><input type="radio" name="q1" value="D"> D) Reflexão sobre o papel e a sabedoria necessária a todo professor.[cite: 8]</label>
-            </div>
-        </div>
-
-        <div class="activity-card">
-            <p><strong>Questão 2.</strong> Considerando as fases do Modernismo e as obras estudadas, o conto <em>"Gaetaninho"</em> (Alcântara Machado) e o conto <em>"Uma Galinha"</em> (Clarice Lispector) pertencem, respectivamente, à:[cite: 10, 14, 25]</p>
-            <div class="options">
-                <label><input type="radio" name="q2" value="A"> A) 1ª e 2ª fases modernistas.[cite: 25]</label>
-                <label><input type="radio" name="q2" value="B"> B) 1ª e 3ª fases modernistas.[cite: 25]</label>
-                <label><input type="radio" name="q2" value="C"> C) 2ª e 3ª fases modernistas.[cite: 25]</label>
-                <label><input type="radio" name="q2" value="D"> D) 3ª e 3ª fases modernistas.[cite: 25]</label>
-            </div>
-        </div>
-
-        <!-- SEÇÃO 2: VERDADEIRO OU FALSO -->
-        <h2>2. Classifique as Afirmações (Verdadeiro ou Falso)</h2>
-
-        <div class="activity-card">
-            <p><strong>Questão 3.</strong> Avalie as afirmações sobre os movimentos literários com (V) para Verdadeiro e (F) para Falso:[cite: 10, 25]</p>
-            
-            <p>( ) O Pré-Modernismo é caracterizado pela convivência entre aspectos conservadores e a busca por renovação temática voltada aos problemas sociais do Brasil.[cite: 10]</p>
-            <div class="options">
-                <label><input type="radio" name="vf1" value="V"> Verdadeiro</label>
-                <label><input type="radio" name="vf1" value="F"> Falso</label>
-            </div>
-
-            <p style="margin-top: 15px;">( ) No conto "Uma Galinha" de Clarice Lispector, a personagem principal é retratada com heroísmo e plena consciência da sua liberdade.[cite: 14, 15]</p>
-            <div class="options">
-                <label><input type="radio" name="vf2" value="V"> Verdadeiro</label>
-                <label><input type="radio" name="vf2" value="F"> Falso</label>
-            </div>
-        </div>
-
-        <!-- SEÇÃO 3: ATIVIDADE EMBARALHADA (REORDENAÇÃO) -->
-        <h2>3. Atividade Embaralhada (Organize a Sequência da Narrativa)</h2>
-        
-        <div class="activity-card">
-            <p><strong>Questão 4.</strong> Ordene os acontecimentos da narrativa do conto <em>"Gaetaninho"</em> na ordem correta dos fatos (Arraste ou clique/mova mentalmente as etapas):[cite: 10, 11, 12]</p>
-            <ul class="sortable-list" id="sortableList">
-                <li class="sortable-item" draggable="true" data-id="1">1. Gaetaninho sonha em andar na boleia do carro de enterro.[cite: 11]</li>
-                <li class="sortable-item" draggable="true" data-id="2">2. Crianças jogam bola na calçada da Rua do Oriente.[cite: 11]</li>
-                <li class="sortable-item" draggable="true" data-id="3">3. Gaetaninho corre para buscar a bola na rua e é atingido pelo bonde.[cite: 11]</li>
-                <li class="sortable-item" draggable="true" data-id="4">4. O enterro de Gaetaninho sai da Rua do Oriente, e Beppino vai na boleia do carro.[cite: 12]</li>
-            </ul>
-            <small><em>Dica: No computador, você pode clicar e arrastar os itens para reordenar.</em></small>
-        </div>
-
-        <!-- SEÇÃO 4: RESPOSTA A MÃO / DISSERTATIVA -->
-        <h2>4. Questões Dissertativas (Resposta Escrita)</h2>
-
-        <div class="activity-card">
-            <p><strong>Questão 5.</strong> Explique com suas palavras o sentido da expressão popular grifada no trecho abaixo extraído do Texto 1:[cite: 8]</p>
-            <p><em>"...contava eu as partidas que havia <u>pregado às convicções e às respeitabilidades</u>, para poder viver."</em>[cite: 8]</p>
-            <textarea id="q5_text" placeholder="Digite sua resposta aqui..."></textarea>
-        </div>
-
-        <div class="activity-card">
-            <p><strong>Questão 6.</strong> O que a figura da galinha no conto de Clarice Lispector representa em relação à condição da mulher na sociedade da época? Justifique.[cite: 16]</p>
-            <textarea id="q6_text" placeholder="Digite sua resposta aqui..."></textarea>
-        </div>
-
-        <!-- BOTOES DE AÇÃO -->
-        <div class="btn-group">
-            <button type="button" class="btn-submit" onclick="window.print()">Imprimir / Salvar em PDF</button>
-            <button type="button" class="btn-email" onclick="sendAnswersByEmail()">Enviar Cópia por E-mail</button>
-        </div>
-    </form>
-</div>
-
-<script>
-    // Lógica para Reordenação (Drag & Drop simples)
-    const sortableList = document.getElementById('sortableList');
-    let draggedItem = null;
-
-    sortableList.addEventListener('dragstart', (e) => {
-        draggedItem = e.target;
-        e.target.style.opacity = '0.5';
-    });
-
-    sortableList.addEventListener('dragend', (e) => {
-        e.target.style.opacity = '1';
-    });
-
-    sortableList.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        const afterElement = getDragAfterElement(sortableList, e.clientY);
-        if (afterElement == null) {
-            sortableList.appendChild(draggedItem);
-        } else {
-            sortableList.insertBefore(draggedItem, afterElement);
-        }
-    });
-
-    function getDragAfterElement(container, y) {
-        const draggableElements = [...container.querySelectorAll('.sortable-item:not(.dragging)')];
-        return draggableElements.reduce((closest, child) => {
-            const box = child.Aqui está uma estrutura completa em **HTML, CSS e JavaScript** pronta para ser salva como um arquivo `.html` (por exemplo, `index.html`) e aberta em qualquer navegador. 
-
-A página foi construída com o conteúdo e as atividades da apostila de **Leitura e Interpretação (Pré-Modernismo e Modernismo)**, integrando exercícios **diversificados** (múltipla escolha, palavras embaralhadas e respostas dissertativas) e um recurso de **envio por e-mail** (via formulário interativo).
-
----
-
-### Código Completo (`index.html`)
-
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades de Língua Portuguesa - Pré-Modernismo e Modernismo</title>
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --bg-color: #f4f6f7;
+            --primary-color: #1e3a8a;
+            --secondary-color: #0d9488;
+            --accent-color: #dc2626;
+            --bg-color: #f8fafc;
             --card-bg: #ffffff;
-            --text-color: #333333;
+            --text-color: #1e293b;
+            --border-color: #cbd5e1;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: var(--bg-color);
             color: var(--text-color);
@@ -311,17 +25,17 @@ A página foi construída com o conteúdo e as atividades da apostila de **Leitu
         }
 
         .container {
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
         header {
             text-align: center;
-            border-bottom: 3px solid var(--secondary-color);
+            border-bottom: 3px solid var(--primary-color);
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
@@ -338,18 +52,52 @@ A página foi construída com o conteúdo e as atividades da apostila de **Leitu
             margin-top: 30px;
         }
 
-        .text-box {
-            background-color: #eef2f5;
-            border-left: 4px solid var(--primary-color);
-            padding: 15px;
-            margin-bottom: 20px;
-            font-style: italic;
+        .student-info {
+            background-color: #f1f5f9;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .student-info h3 {
+            grid-column: 1 / -1;
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 110px;
+            resize: vertical;
         }
 
         .activity-card {
-            background: #fafafa;
-            border: 1px solid #e0e0e0;
-            border-radius: 6px;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
             padding: 20px;
             margin-bottom: 25px;
         }
@@ -357,31 +105,36 @@ A página foi construída com o conteúdo e as atividades da apostila de **Leitu
         .activity-title {
             font-weight: bold;
             color: var(--primary-color);
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        .text-box {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--primary-color);
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            font-style: italic;
         }
 
         .options label {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 10px;
             margin: 8px 0;
-            cursor: pointer;
-        }
-
-        input[type="text"], textarea, input[type="email"] {
-            width: 100%;
             padding: 10px;
-            margin-top: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
         }
 
-        textarea {
-            height: 100px;
-            resize: vertical;
+        .options label:hover {
+            background-color: #e2e8f0;
         }
 
         .unscramble-item {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
         }
 
         .scrambled-word {
@@ -390,29 +143,41 @@ A página foi construída com o conteúdo e as atividades da apostila de **Leitu
             letter-spacing: 2px;
         }
 
-        .email-section {
-            background-color: #e8f4f8;
-            border: 1px solid #bce8f1;
-            padding: 20px;
-            border-radius: 6px;
-            margin-top: 40px;
+        .required-star {
+            color: var(--accent-color);
+            font-weight: bold;
         }
 
-        button {
-            background-color: var(--secondary-color);
+        .submit-section {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        button[type="submit"] {
+            background-color: var(--primary-color);
             color: white;
             border: none;
-            padding: 12px 20px;
-            font-size: 16px;
-            border-radius: 4px;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 6px;
             cursor: pointer;
             width: 100%;
-            margin-top: 15px;
-            transition: background 0.3s ease;
+            transition: background-color 0.3s;
         }
 
-        button:hover {
-            background-color: #2980b9;
+        button[type="submit"]:hover {
+            background-color: #1d4ed8;
+        }
+
+        @media (max-width: 600px) {
+            .student-info {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -424,91 +189,50 @@ A página foi construída com o conteúdo e as atividades da apostila de **Leitu
         <p><strong>Pré-Modernismo e Modernismo no Brasil</strong></p>
     </header>
 
-    <form id="quizForm" action="[https://formsubmit.co/SEU_EMAIL_AQUI@EMAIL.COM](https://formsubmit.co/SEU_EMAIL_AQUI@EMAIL.COM)" method="POST">
-        <!-- Configurações do FormSubmit -->
-        <input type="hidden" name="_subject" value="Nova Resposta das Atividades de Literatura">
+    <!-- Formulário configurado para enviar diretamente para o e-mail do professor -->
+    <form id="quizForm" action="https://formsubmit.co/professor.lellus@gmail.com" method="POST">
+        <!-- Configurações do serviço FormSubmit -->
+        <input type="hidden" name="_subject" value="Nova Resposta das Atividades - Pré-Modernismo e Modernismo">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
-        <!-- DADOS DO ALUNO -->
-        <div class="activity-card" style="background-color: #f0f4f8;">
+        <!-- SEÇÃO DE IDENTIFICAÇÃO DO ALUNO -->
+        <div class="student-info">
             <h3>Identificação do Aluno</h3>
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="Nome do Aluno" required placeholder="Digite seu nome completo">
+            
+            <div class="input-group">
+                <label for="nome">Nome Completo <span class="required-star">*</span></label>
+                <input type="text" id="nome" name="Nome do Aluno" required placeholder="Digite seu nome completo">
+            </div>
 
-            <label for="email_aluno" style="margin-top: 10px; display:block;">Seu E-mail (para receber a confirmação):</label>
-            <input type="email" id="email_aluno" name="E-mail do Aluno" required placeholder="seuemail@exemplo.com">
+            <div class="input-group">
+                <label for="turma">Turma <span class="required-star">*</span></label>
+                <input type="text" id="turma" name="Turma" required placeholder="Ex: 3º Ano A, Turma 3001">
+            </div>
+
+            <div class="input-group" style="grid-column: 1 / -1;">
+                <label for="email_aluno">E-mail do Aluno <span class="required-star">*</span></label>
+                <input type="email" id="email_aluno" name="E-mail do Aluno" required placeholder="seuemail@exemplo.com">
+            </div>
         </div>
 
-        <!-- SEÇÃO 1: MARCAR A VERDADEIRA -->
+        <!-- SEÇÃO 1: MARCAR A VERDADEIRA (MÚLTIPLA ESCOLHA) -->
         <h2>Parte 1: Múltipla Escolha (Marcar a Alternativa Correta)</h2>
 
         <div class="activity-card">
-            <div class="activity-title">1. Em "O homem que sabia javanês", de Lima Barreto, o tema principal do conto desenvolve-se a partir de:</div>
+            <div class="activity-title">1. Em "O homem que sabia javanês", de Lima Barreto, o tema principal do conto desenvolve-se a partir de: <span class="required-star">*</span></div>
             <div class="text-box">
                 "O meu amigo ouvia-me calado, embevecido, gostando daquele meu Gil Blas vivido..."
             </div>
             <div class="options">
-                <label><input type="radio" name="Q1_Lima_Barreto" value="A" required> A) Uma crítica ferrenha e exclusiva aos leitores de jornais de época.</label>
-                <label><input type="radio" name="Q1_Lima_Barreto" value="B"> B) Uma sátira social sobre o valor dado às aparências e ao saber superficial.</label>
-                <label><input type="radio" name="Q1_Lima_Barreto" value="C"> C) Um relato factual e científico sobre a ilha de Java e a linguagem malaia.</label>
-                <label><input type="radio" name="Q1_Lima_Barreto" value="D"> D) Um elogio acadêmico aos rigores do sistema burocrático de ensino.</label>
+                <label><input type="radio" name="Q1_Lima_Barreto" value="A) Crítica ferrenha aos leitores de jornais" required> A) Uma crítica ferrenha e exclusiva aos leitores de jornais de época.</label>
+                <label><input type="radio" name="Q1_Lima_Barreto" value="B) Sátira social sobre valor das aparências e saber superficial" required> B) Uma sátira social sobre o valor dado às aparências e ao saber superficial.</label>
+                <label><input type="radio" name="Q1_Lima_Barreto" value="C) Relato factual e científico sobre a ilha de Java" required> C) Um relato factual e científico sobre a ilha de Java e a linguagem malaia.</label>
+                <label><input type="radio" name="Q1_Lima_Barreto" value="D) Elogio acadêmico aos rigores da burocracia" required> D) Um elogio acadêmico aos rigores do sistema burocrático de ensino.</label>
             </div>
         </div>
 
         <div class="activity-card">
-            <div class="activity-title">2. No conto "Gaetaninho", de Antônio de Alcântara Machado, a linguagem utilizada pelo autor caracteriza-se por:</div>
+            <div class="activity-title">2. No conto "Gaetaninho", de Antônio de Alcântara Machado, a linguagem utilizada pelo autor caracteriza-se por: <span class="required-star">*</span></div>
             <div class="options">
-                <label><input type="radio" name="Q2_Gaetaninho" value="A" required> A) Um estilo rebuscado, formal e fiel ao academicismo tradicional.</label>
-                <label><input type="radio" name="Q2_Gaetaninho" value="B"> B) Uma narrativa poética, sem foco na realidade dos bairros operários.</label>
-                <label><input type="radio" name="Q2_Gaetaninho" value="C"> C) Linguagem ágil e incorporação do falar cotidiano do imigrante (ítalo-paulistano).</label>
-                <label><input type="radio" name="Q2_Gaetaninho" value="D"> D) Uso exclusivo do discurso direto em todos os parágrafos sem narrador.</label>
-            </div>
-        </div>
-
-        <!-- SEÇÃO 2: PALAVRAS EMBARALHADAS -->
-        <h2>Parte 2: Atividade de Desembaralhar (Termos e Conceitos)</h2>
-        <p>Ordene as letras destacadas para encontrar os termos literários ou conceitos presentes na apostila:</p>
-
-        <div class="activity-card">
-            <div class="unscramble-item">
-                <p>1. Movimento literário marcado por romper com a tradição e experimentar novas formas: <span class="scrambled-word">O D M E R I N S M O</span></p>
-                <input type="text" name="Desembaralhar_1" placeholder="Sua resposta aqui..." required>
-            </div>
-
-            <div class="unscramble-item">
-                <p>2. Figura de linguagem que atribui características humanas a seres inanimados ou animais (como em "Uma Galinha"): <span class="scrambled-word">P I C A F I O N A C E R T O S</span></p>
-                <input type="text" name="Desembaralhar_2" placeholder="Sua resposta aqui..." required>
-            </div>
-
-            <div class="unscramble-item">
-                <p>3. Recursos em que o discurso do narrador se confunde com o pensamento da personagem sem marcas formais: <span class="scrambled-word">I N D I R E T O  L I V R E</span></p>
-                <input type="text" name="Desembaralhar_3" placeholder="Sua resposta aqui..." required>
-            </div>
-        </div>
-
-        <!-- SEÇÃO 3: RESPOSTA A MÃO (DISSERTATIVAS) -->
-        <h2>Parte 3: Questões Dissertativas (Resposta Escrita)</h2>
-
-        <div class="activity-card">
-            <div class="activity-title">1. Análise de Expressoes ("Gaetaninho"):</div>
-            <p>Explique com suas palavras o sentido do trecho destacado no contexto do conto: <em>"Gaetaninho ficou banzando bem no meio da rua..."</em></p>
-            <textarea name="Q_Dissertativa_1" required placeholder="Escreva sua resposta aqui..."></textarea>
-        </div>
-
-        <div class="activity-card">
-            <div class="activity-title">2. Interpretação do Conto "Uma Galinha" (Clarice Lispector):</div>
-            <p>De que forma o comportamento e a trajetória da galinha no conto podem simbolizar reflexões sobre a rotina e o papel social da mulher na sociedade da época?</p>
-            <textarea name="Q_Dissertativa_2" required placeholder="Escreva sua resposta aqui..."></textarea>
-        </div>
-
-        <!-- SEÇÃO DE ENVIO POR EMAIL -->
-        <div class="email-section">
-            <h2>Enviar Respostas</h2>
-            <p>Ao clicar no botão abaixo, suas respostas serão processadas e enviadas para o seu e-mail e para o e-mail cadastrado pelo professor.</p>
-            <button type="submit">Enviar Cópia por E-mail</button>
-        </div>
-    </form>
-</div>
-
-</body>
-</html>
+                <label><input type="radio" name="Q2_Gaetaninho" value="A) Estilo rebuscado, formal e acadêmico" required> A) Um estilo rebuscado, formal
